@@ -125,9 +125,9 @@ Before a new training run, the gradients of each runtime were compared with a fl
 - a guard stops identical retries;
 - a fallback serves the direct answer when the tool path fails.
 
-On **542 fresh non-calculation requests**: 0 leaked tool markup, 0 missing answers and 0 exact-match losses. The calculation gain was unchanged (59 → 120).
+On **542 non-calculation cases** that were new to this study (built on the same templates as an earlier set): 0 leaked tool markup, 0 missing answers and 0 exact-match losses. The calculation gain was unchanged (59 → 120).
 
-**Blind review of the 36 writing answers changed by the router:**
+**Blind review of the 36 cases whose answer the router changed (mostly writing tasks):**
 - content: 15 gains and 8 regressions;
 - no new critical error;
 - 11 critical errors of the production model fixed.
@@ -142,7 +142,7 @@ The pre-registered verdict was **INTEGRATION_VALIDEE_DEV**, with router A retain
 
 **R1, one seed.**
 - The calculation gain was large: VF 194 → 237 / 276.
-- The blind review found **15 new critical errors**, among them values invented when an input was missing.
+- The blind review found **at least 15 new critical errors** (up to 30 counting the open cases), among them values invented when an input was missing.
 - Verdict: to be revised.
 
 **R2, redesigned and 2 seeds, $3.39.** The redesign added missing-input examples, more replay and stricter code gates, and went through several rounds of adversarial review.
