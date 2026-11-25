@@ -1,0 +1,47 @@
+{
+ "source": "TOOLCALC R2, R2F S1 adapter, set E (never seen in training), 5 simple families",
+ "by_family": {
+  "decalage_date": {
+   "n": 10,
+   "direct_ok": 7,
+   "system_ok": 10,
+   "routed": 10,
+   "fallback": 0
+  },
+  "duree": {
+   "n": 10,
+   "direct_ok": 3,
+   "system_ok": 10,
+   "routed": 10,
+   "fallback": 0
+  },
+  "montant": {
+   "n": 10,
+   "direct_ok": 4,
+   "system_ok": 10,
+   "routed": 10,
+   "fallback": 0
+  },
+  "pourcentage": {
+   "n": 10,
+   "direct_ok": 9,
+   "system_ok": 10,
+   "routed": 10,
+   "fallback": 0
+  },
+  "remise": {
+   "n": 10,
+   "direct_ok": 3,
+   "system_ok": 10,
+   "routed": 10,
+   "fallback": 0
+  }
+ },
+ "total": {
+  "n": 50,
+  "direct_ok": 26,
+  "system_ok": 50,
+  "routed": 50,
+  "fallback": 0
+ }
+}

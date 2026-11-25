@@ -1,0 +1,609 @@
+{
+ "thresholds": {
+  "net_gain_min_PE": 18,
+  "p_max": 0.01,
+  "net_gain_min_P": 4,
+  "f_markup_max": 0,
+  "f_missing_max": 0,
+  "f_exact_net_loss_max": 3
+ },
+ "complete_cases": {
+  "C": 148,
+  "E": 142,
+  "F": 542,
+  "P": 42,
+  "S": 2
+ },
+ "complete_as_planned": true,
+ "routers": {
+  "A": {
+   "P": {
+    "n": 42,
+    "routed": 42,
+    "fallback": 6,
+    "vf_direct": 13,
+    "vf_system": 25,
+    "exact_direct": 10,
+    "exact_system": 21,
+    "gain": 13,
+    "gain_robuste": 13,
+    "regression": 1,
+    "net_robuste": 12,
+    "sign_test_p": 0.0018310546875
+   },
+   "E": {
+    "n": 142,
+    "routed": 142,
+    "fallback": 2,
+    "vf_direct": 46,
+    "vf_system": 95,
+    "exact_direct": 31,
+    "exact_system": 82,
+    "gain": 50,
+    "gain_robuste": 50,
+    "regression": 1,
+    "net_robuste": 49,
+    "sign_test_p": 4.618527782440651e-14
+   },
+   "PE": {
+    "n": 184,
+    "routed": 184,
+    "fallback": 8,
+    "vf_direct": 59,
+    "vf_system": 120,
+    "exact_direct": 41,
+    "exact_system": 103,
+    "gain": 63,
+    "gain_robuste": 63,
+    "regression": 2,
+    "net_robuste": 61,
+    "sign_test_p": 1.1633489310769463e-16
+   },
+   "S": {
+    "n": 2,
+    "routed": 2,
+    "fallback": 0,
+    "vf_direct": 2,
+    "vf_system": 2,
+    "exact_direct": 1,
+    "exact_system": 2,
+    "gain": 0,
+    "gain_robuste": 0,
+    "regression": 0,
+    "net_robuste": 0,
+    "sign_test_p": 1.0
+   },
+   "F_harm": {
+    "n": 542,
+    "routed": 56,
+    "fallback": 0,
+    "markup": 0,
+    "missing": 0,
+    "exact_direct": 176,
+    "exact_system": 179,
+    "exact_to_not": 0,
+    "not_to_exact": 3,
+    "changed": 36,
+    "exact_net_loss": -3,
+    "changed_slots": [
+     "G-client_delai-00",
+     "G-client_delai-01",
+     "G-client_delai-02",
+     "G-client_delai-03",
+     "G-client_delai-04",
+     "G-client_delai-05",
+     "G-client_delai-06",
+     "G-client_delai-07",
+     "G-client_delai-08",
+     "G-client_delai-09",
+     "G-courriel_demande-00",
+     "G-courriel_demande-01",
+     "G-courriel_demande-02",
+     "G-courriel_demande-03",
+     "G-courriel_demande-04",
+     "G-courriel_demande-05",
+     "G-courriel_demande-06",
+     "G-courriel_demande-07",
+     "G-courriel_demande-08",
+     "G-courriel_demande-09",
+     "G-courtoisie-00",
+     "G-courtoisie-01",
+     "G-courtoisie-02",
+     "G-courtoisie-03",
+     "G-courtoisie-06",
+     "G-courtoisie-07",
+     "G-courtoisie-08",
+     "G-courtoisie-09",
+     "T2-train-manquant-0-0-1",
+     "T2-train-manquant-0-2-1",
+     "T2-train-manquant-1-0-1",
+     "T2-train-manquant-1-2-1",
+     "T2-train-manquant-2-0-1",
+     "T2-train-manquant-2-2-0",
+     "T2-train-manquant-2-2-1",
+     "T2-train-manquant-3-2-1"
+    ],
+    "logic_verdicts": {
+     "direct_ok/system_ok": 140
+    }
+   },
+   "C_harm": {
+    "n": 148,
+    "routed": 15,
+    "fallback": 0,
+    "markup": 0,
+    "missing": 0,
+    "exact_direct": 42,
+    "exact_system": 42,
+    "exact_to_not": 0,
+    "not_to_exact": 0,
+    "changed": 11,
+    "exact_net_loss": 0,
+    "changed_slots": [
+     "G-client_delai-10",
+     "G-client_delai-11",
+     "G-courriel_demande-10",
+     "G-courriel_demande-11",
+     "G-courtoisie-10",
+     "G-courtoisie-11",
+     "N-06-table_deux_colonnes",
+     "N-07-masque_code",
+     "T2-dev-manquant-0-1-1",
+     "T2-dev-manquant-1-1-0",
+     "T2-dev-manquant-1-1-1"
+    ],
+    "logic_verdicts": {
+     "direct_ok/system_ok": 40
+    }
+   },
+   "PE_by_family": {
+    "absence_non_zero": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "calendrier": {
+     "n": 32,
+     "routed": 32,
+     "fallback": 6,
+     "vf_direct": 1,
+     "vf_system": 9,
+     "gain_robuste": 8,
+     "regression": 0
+    },
+    "centimes": {
+     "n": 32,
+     "routed": 32,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 14,
+     "gain_robuste": 14,
+     "regression": 1
+    },
+    "date_conditionnelle": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 0,
+     "vf_system": 1,
+     "gain_robuste": 1,
+     "regression": 0
+    },
+    "decalage_date": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 9,
+     "vf_system": 12,
+     "gain_robuste": 3,
+     "regression": 0
+    },
+    "duree": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 5,
+     "vf_system": 12,
+     "gain_robuste": 7,
+     "regression": 0
+    },
+    "json_agregation": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "montant": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 5,
+     "vf_system": 12,
+     "gain_robuste": 7,
+     "regression": 0
+    },
+    "pourcentage": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 11,
+     "vf_system": 12,
+     "gain_robuste": 1,
+     "regression": 0
+    },
+    "remise": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 3,
+     "vf_system": 12,
+     "gain_robuste": 9,
+     "regression": 0
+    },
+    "remise_puis_frais": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "total_incomplet": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 10,
+     "vf_system": 12,
+     "gain_robuste": 2,
+     "regression": 0
+    },
+    "transformation": {
+     "n": 32,
+     "routed": 32,
+     "fallback": 2,
+     "vf_direct": 0,
+     "vf_system": 10,
+     "gain_robuste": 10,
+     "regression": 0
+    },
+    "variation_signee": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 11,
+     "vf_system": 11,
+     "gain_robuste": 1,
+     "regression": 1
+    }
+   },
+   "calc_criterion": true,
+   "harm_criterion_F": true
+  },
+  "B": {
+   "P": {
+    "n": 42,
+    "routed": 37,
+    "fallback": 6,
+    "vf_direct": 13,
+    "vf_system": 23,
+    "exact_direct": 10,
+    "exact_system": 20,
+    "gain": 11,
+    "gain_robuste": 11,
+    "regression": 1,
+    "net_robuste": 10,
+    "sign_test_p": 0.00634765625
+   },
+   "E": {
+    "n": 142,
+    "routed": 112,
+    "fallback": 2,
+    "vf_direct": 46,
+    "vf_system": 87,
+    "exact_direct": 31,
+    "exact_system": 72,
+    "gain": 42,
+    "gain_robuste": 42,
+    "regression": 1,
+    "net_robuste": 41,
+    "sign_test_p": 1.000444171950221e-11
+   },
+   "PE": {
+    "n": 184,
+    "routed": 149,
+    "fallback": 8,
+    "vf_direct": 59,
+    "vf_system": 110,
+    "exact_direct": 41,
+    "exact_system": 92,
+    "gain": 53,
+    "gain_robuste": 53,
+    "regression": 2,
+    "net_robuste": 51,
+    "sign_test_p": 8.554268404736831e-14
+   },
+   "S": {
+    "n": 2,
+    "routed": 2,
+    "fallback": 0,
+    "vf_direct": 2,
+    "vf_system": 2,
+    "exact_direct": 1,
+    "exact_system": 2,
+    "gain": 0,
+    "gain_robuste": 0,
+    "regression": 0,
+    "net_robuste": 0,
+    "sign_test_p": 1.0
+   },
+   "F_harm": {
+    "n": 542,
+    "routed": 18,
+    "fallback": 0,
+    "markup": 0,
+    "missing": 0,
+    "exact_direct": 176,
+    "exact_system": 178,
+    "exact_to_not": 0,
+    "not_to_exact": 2,
+    "changed": 3,
+    "exact_net_loss": -2,
+    "changed_slots": [
+     "T2-train-manquant-1-2-1",
+     "T2-train-manquant-2-2-1",
+     "T2-train-manquant-3-2-1"
+    ],
+    "logic_verdicts": {
+     "direct_ok/system_ok": 140
+    }
+   },
+   "C_harm": {
+    "n": 148,
+    "routed": 9,
+    "fallback": 0,
+    "markup": 0,
+    "missing": 0,
+    "exact_direct": 42,
+    "exact_system": 42,
+    "exact_to_not": 0,
+    "not_to_exact": 0,
+    "changed": 5,
+    "exact_net_loss": 0,
+    "changed_slots": [
+     "N-09-deux_regles_ordonnee",
+     "N-15-json_dedoublonnage",
+     "T2-dev-manquant-0-0-0",
+     "T2-dev-manquant-1-0-0",
+     "T2-dev-manquant-1-0-1"
+    ],
+    "logic_verdicts": {
+     "direct_ok/system_ok": 40
+    }
+   },
+   "PE_by_family": {
+    "absence_non_zero": {
+     "n": 1,
+     "routed": 0,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "calendrier": {
+     "n": 32,
+     "routed": 30,
+     "fallback": 6,
+     "vf_direct": 1,
+     "vf_system": 7,
+     "gain_robuste": 6,
+     "regression": 0
+    },
+    "centimes": {
+     "n": 32,
+     "routed": 32,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 14,
+     "gain_robuste": 14,
+     "regression": 1
+    },
+    "date_conditionnelle": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 0,
+     "vf_system": 1,
+     "gain_robuste": 1,
+     "regression": 0
+    },
+    "decalage_date": {
+     "n": 12,
+     "routed": 11,
+     "fallback": 0,
+     "vf_direct": 9,
+     "vf_system": 12,
+     "gain_robuste": 3,
+     "regression": 0
+    },
+    "duree": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 5,
+     "vf_system": 12,
+     "gain_robuste": 7,
+     "regression": 0
+    },
+    "json_agregation": {
+     "n": 1,
+     "routed": 0,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "montant": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 5,
+     "vf_system": 12,
+     "gain_robuste": 7,
+     "regression": 0
+    },
+    "pourcentage": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 11,
+     "vf_system": 12,
+     "gain_robuste": 1,
+     "regression": 0
+    },
+    "remise": {
+     "n": 12,
+     "routed": 12,
+     "fallback": 0,
+     "vf_direct": 3,
+     "vf_system": 12,
+     "gain_robuste": 9,
+     "regression": 0
+    },
+    "remise_puis_frais": {
+     "n": 1,
+     "routed": 1,
+     "fallback": 0,
+     "vf_direct": 1,
+     "vf_system": 1,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "total_incomplet": {
+     "n": 12,
+     "routed": 0,
+     "fallback": 0,
+     "vf_direct": 10,
+     "vf_system": 10,
+     "gain_robuste": 0,
+     "regression": 0
+    },
+    "transformation": {
+     "n": 32,
+     "routed": 20,
+     "fallback": 2,
+     "vf_direct": 0,
+     "vf_system": 5,
+     "gain_robuste": 5,
+     "regression": 0
+    },
+    "variation_signee": {
+     "n": 12,
+     "routed": 6,
+     "fallback": 0,
+     "vf_direct": 11,
+     "vf_system": 10,
+     "gain_robuste": 0,
+     "regression": 1
+    }
+   },
+   "calc_criterion": true,
+   "harm_criterion_F": true
+  }
+ },
+ "triage_decisions": {
+  "C": {
+   "NON": 136,
+   "INVALIDE": 3,
+   "OUI": 9
+  },
+  "E": {
+   "OUI": 112,
+   "NON": 30
+  },
+  "F": {
+   "NON": 505,
+   "OUI": 18,
+   "INVALIDE": 19
+  },
+  "P": {
+   "OUI": 37,
+   "NON": 5
+  },
+  "S": {
+   "OUI": 2
+  }
+ },
+ "route_a_by_set": {
+  "C": 15,
+  "E": 142,
+  "F": 56,
+  "P": 42,
+  "S": 2
+ },
+ "tool_profile_by_set": {
+  "C": {
+   "final_status_ANSWERED": 23,
+   "repaired_escaped_quotes": 0,
+   "runs": 23,
+   "sandbox_ERROR": 2,
+   "sandbox_OK": 10,
+   "with_call": 11
+  },
+  "E": {
+   "final_status_ANSWERED": 140,
+   "final_status_MALFORMED_CALL": 1,
+   "final_status_RETRY_STOPPED": 1,
+   "repaired_escaped_quotes": 0,
+   "runs": 142,
+   "sandbox_ERROR": 16,
+   "sandbox_NO_OUTPUT": 2,
+   "sandbox_OK": 131,
+   "sandbox_REFUSED": 1,
+   "with_call": 135
+  },
+  "F": {
+   "final_status_ANSWERED": 69,
+   "repaired_escaped_quotes": 0,
+   "runs": 69,
+   "sandbox_ERROR": 1,
+   "sandbox_OK": 22,
+   "with_call": 23
+  },
+  "P": {
+   "final_status_ANSWERED": 36,
+   "final_status_MALFORMED_CALL": 1,
+   "final_status_RETRY_STOPPED": 5,
+   "repaired_escaped_quotes": 0,
+   "runs": 42,
+   "sandbox_ERROR": 12,
+   "sandbox_OK": 34,
+   "sandbox_REFUSED": 2,
+   "with_call": 39
+  },
+  "S": {
+   "final_status_ANSWERED": 2,
+   "repaired_escaped_quotes": 0,
+   "runs": 2,
+   "sandbox_OK": 2,
+   "with_call": 2
+  }
+ },
+ "decision": {
+  "decision": "INTEGRATION_VALIDEE_DEV",
+  "retained_router": "A",
+  "routers_meeting_both": [
+   "A",
+   "B"
+  ]
+ }
+}
